@@ -2,12 +2,7 @@ import records
 from datetime import datetime
 
 db = records.Database('sqlite:///hotrepos.db')
-
-
-def create_table():
-    print 'creating table'
-    db.query('DROP TABLE IF EXISTS repos')
-    db.query('CREATE TABLE repos (id int PRIMARY KEY, pubtime timestamp)')
+db.query('CREATE TABLE IF NOT EXISTS repos (id int PRIMARY KEY, pubtime timestamp)')
 
 
 def posted(repo):
