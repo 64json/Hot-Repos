@@ -20,7 +20,7 @@ def job():
 
 def run():
     job()
-    schedule.every(os.getenv('INTERVAL_MINUTES', 5)).minutes.do(job)
+    schedule.every(int(os.getenv('INTERVAL_MINUTES', '5'))).minutes.do(job)
 
     while 1:
         schedule.run_pending()
