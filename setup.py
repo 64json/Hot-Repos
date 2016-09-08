@@ -12,5 +12,6 @@ setup(name='hotrepos',
           'schedule',
           'requests',
           'records',
-          'facebook-sdk'
+          'facebook-sdk',
+          'psycopg2'
       ])
