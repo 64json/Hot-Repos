@@ -92,4 +92,3 @@ ENV/
 # Custom
 .DS_Store
 .idea/
-hotrepos.db

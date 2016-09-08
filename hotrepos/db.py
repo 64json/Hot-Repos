@@ -1,7 +1,8 @@
 import records
 from datetime import datetime
+import os
 
-db = records.Database('sqlite:///hotrepos.db')
+db = records.Database(os.environ["DATABASE_URL"])
 db.query('CREATE TABLE IF NOT EXISTS repos (id int PRIMARY KEY, pubtime timestamp)')
 
 
