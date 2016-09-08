@@ -90,7 +90,6 @@ ENV/
 .ropeproject
 
 # Custom
-private.py
 .DS_Store
 .idea/
 hotrepos.db
