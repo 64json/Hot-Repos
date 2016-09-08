@@ -93,3 +93,4 @@ ENV/
 private.py
 .DS_Store
 .idea/
+hotrepos.db
