@@ -1,7 +1,7 @@
 import os
 import facebook
 
-graph = facebook.GraphAPI(os.environ['fb_access_token'])
+graph = facebook.GraphAPI(os.environ['FB_ACCESS_TOKEN'])
 
 
 def post(repo):
@@ -14,5 +14,5 @@ def post(repo):
     graph.put_wall_post(repo_name + '\n\n' + repo_desc + '\n#hotrepo #hotrepo_' + repo_lang,
                         {'name': repo_name, 'link': repo_url, 'caption': repr(repo_star) + ' stars on GitHub',
                          'description': repo_desc, 'picture': repo_avatar},
-                        os.environ['fb_page_id'])
+                        os.environ['FB_PAGE_ID'])
     return True

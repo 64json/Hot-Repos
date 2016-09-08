@@ -4,6 +4,7 @@ import github
 import sns
 import db
 from datetime import datetime
+import os
 
 
 def job():
@@ -19,7 +20,7 @@ def job():
 
 def run():
     job()
-    schedule.every(5).minutes.do(job)
+    schedule.every(os.getenv('INTERVAL_MINUTES', 5)).minutes.do(job)
 
     while 1:
         schedule.run_pending()
