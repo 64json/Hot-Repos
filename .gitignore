@@ -91,3 +91,5 @@ ENV/
 
 # Custom
 private.py
+.DS_Store
+.idea/
