@@ -11,6 +11,7 @@ def post(repo):
     repo_url = repo['html_url']
     repo_star = repo['stargazers_count']
     repo_avatar = repo['owner']['avatar_url']
+    print repo
     graph.put_wall_post(repo_name + '\n\n' + repo_desc + '\n#hotrepo #hotrepo_' + repo_lang,
                         {'name': repo_name, 'link': repo_url, 'caption': repr(repo_star) + ' stars on GitHub',
                          'description': repo_desc, 'picture': repo_avatar},
