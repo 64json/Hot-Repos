@@ -5,7 +5,7 @@ graph = facebook.GraphAPI(os.environ['FB_ACCESS_TOKEN'])
 
 
 def xstr(s):
-    return '' if s is None else str(s)
+    return '' if s is None else s
 
 
 def post(repo):
