@@ -1,10 +1,7 @@
-import schedule
-import time
 import github
 import sns
 import db
 from datetime import datetime
-import os
 
 
 def job():
@@ -18,6 +15,7 @@ def job():
             break
 
 
+"""
 def run():
     job()
     schedule.every(int(os.getenv('INTERVAL_MINUTES', '5'))).minutes.do(job)
@@ -25,3 +23,4 @@ def run():
     while 1:
         schedule.run_pending()
         time.sleep(1)
+"""

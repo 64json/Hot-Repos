@@ -1,3 +1,3 @@
-from hotrepos import run
+from hotrepos import job
 
-run()
+job()
