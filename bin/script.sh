@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python /app/hotrepos/run.py
+python /app/run.py
